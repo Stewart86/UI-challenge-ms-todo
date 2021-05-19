@@ -14,7 +14,7 @@ export const AddTask = () => {
   }
 
   return (
-    <div className='flex bg-gray-800 rounded mx-10 mb-10 p-4 text-gray-300 bg-opacity-80 hover:bg-gray-700 '>
+    <div className='flex bg-gray-800 rounded mx-10 mb-8 p-3 text-white bg-opacity-80 hover:bg-gray-900 hover:bg-opacity-40'>
       <span>
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -32,7 +32,7 @@ export const AddTask = () => {
       </span>
       <input
         onKeyPress={handleAddTask}
-        className='bg-transparent w-full h-full m-0 p-0 outline-none'
+        className='bg-transparent w-full h-full m-0 p-0 outline-none text-white'
         placeholder='Add a task'
         value={value}
         onChange={(e) => setValue(e.target.value)}
