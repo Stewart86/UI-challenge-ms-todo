@@ -1,10 +1,13 @@
-import { Todo } from "./Todo"
+import { TaskProvider } from "./contexts/TaskProvider"
+import { Todo } from "./containers/Todo"
 
 function App() {
   return (
-    <div>
-      <Todo />
-    </div>
+    <TaskProvider>
+      <div className='bg-gradient-to-r from-blue-300 container flex h-screen min-w-full justify-center'>
+        <Todo />
+      </div>
+    </TaskProvider>
   )
 }
 
