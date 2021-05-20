@@ -12,21 +12,35 @@ const taskToObject = (tasks) => {
 
 export const TaskList = () => {
   const { tasks } = useContext(TaskContext)
+  const [hover, setHover] = useState(taskToObject(tasks))
+
+  const toggleHover = (e) => {
+    setHover((state) => {
+      if (state[e.target.value] === false) {
+        state[e.target.value] = true
+      } else {
+        state[e.target.value] = false
+      }
+      return state
+    })
+  }
 
   return (
     <div className='flex flex-col mt-4 space-y-1'>
       {tasks.map((task) => (
         <div
           key={task}
-          className='flex flex-col mx-10 p-2 bg-gray-800 text-gray-300 bg-opacity-80 hover:bg-gray-700 h-full rounded'>
+          className='flex flex-col mx-10 p-2 bg-gray-700 text-gray-300 hover:bg-gray-600 h-full rounded'>
           <div className='flex flex-row justify-between items-center'>
             <div className='flex flex-row items-center'>
               <button
                 value={task}
+                onMouseEnter={toggleHover}
+                onMouseLeave={toggleHover}
                 className='flex items-center justify-center rounded-full w-6 h-6 mr-4 ml-2 border-gray-300 border-2 outline-none focus:outline-none'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
-                  className='h-4 w-4 invisible'
+                  className={`h-4 w-4 text-transparent hover:text-white`}
                   fill='none'
                   viewBox='0 0 24 24'
                   stroke='currentColor'>

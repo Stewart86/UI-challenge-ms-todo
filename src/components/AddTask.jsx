@@ -14,7 +14,7 @@ export const AddTask = () => {
   }
 
   return (
-    <div className='flex bg-gray-800 rounded mx-10 mb-8 p-3 text-white bg-opacity-80 hover:bg-gray-900 hover:bg-opacity-40'>
+    <div className='flex bg-gray-800 rounded mx-10 mb-8 p-3 text-white bg-opacity-90 hover:bg-gray-900 hover:bg-opacity-70'>
       <span>
         <svg
           xmlns='http://www.w3.org/2000/svg'

@@ -14,7 +14,7 @@ export const MyDay = () => {
         <div className='bg-black rounded hover:bg-gray-900'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
-            className='h-6 w-6 m-1 text-gray-300'
+            className='h-6 w-6 m-1 text-white'
             fill='none'
             viewBox='0 0 24 24'
             stroke='currentColor'>
@@ -29,7 +29,7 @@ export const MyDay = () => {
         <div className='bg-black rounded hover:bg-gray-900'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
-            className='h-6 w-6 m-1 text-gray-300'
+            className='h-6 w-6 m-1 text-white'
             fill='none'
             viewBox='0 0 24 24'
             stroke='currentColor'>
