@@ -14,7 +14,7 @@ export const Todo = () => {
           "0px 2px 40px 15px rgba(0,0,0,0.3),0px 2px 10px 4px rgba(0,0,0,0.3)",
       }}>
       <div className='flex flex-col justify-between h-full'>
-        <div className='flex flex-col flex-start'>
+        <div className='flex flex-col flex-start h-5/6 overflow-auto'>
           <MyDay />
           <TaskList />
         </div>

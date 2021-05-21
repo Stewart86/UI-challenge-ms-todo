@@ -8,7 +8,18 @@ export const AddTask = () => {
 
   const handleAddTask = (e) => {
     if (e.key === "Enter") {
-      handleSetTasks(e.target.value)
+      const task = {
+        title: e.target.value,
+        isDone: false,
+        isFavourite: false,
+        hasDueDate: false,
+        hasAlarm: false,
+        hasRepeat: false,
+        note: null,
+        steps: [],
+        assignTo: null,
+      }
+      handleSetTasks(task)
       setValue("")
     }
   }
