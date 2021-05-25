@@ -1,4 +1,3 @@
-import React from "react"
 import { todayDate } from "../utils/date"
 
 export const MyDay = () => {

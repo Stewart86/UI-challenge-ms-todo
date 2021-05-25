@@ -1,6 +1,6 @@
 # Speed Coding Challenge (MS TODO)
 
-This project is the fruit of  me trying out Tailwind CSS for the first time. The idea is to see how mucch time I will need to take to receate the Microsoft Todo app's layout and some basic function.
+This project is the fruit of me trying out Tailwind CSS for the first time. The idea is to see how mucch time I will need to take to receate the Microsoft Todo app's layout and some basic function.
 
 ## Time Spent
 

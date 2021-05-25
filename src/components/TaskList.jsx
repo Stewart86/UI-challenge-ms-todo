@@ -1,11 +1,12 @@
-import React, { useContext, useState } from "react"
+import { useContext, useState } from "react"
 
 import { TaskContext } from "../contexts/TaskProvider"
 
 export const TaskList = () => {
   const [hideComplete, setHideComplete] = useState(true)
-  const { tasks, done, handleFavourite, handleDone, handleUndone } =
-    useContext(TaskContext)
+  const { tasks, done, handleFavourite, handleDone, handleUndone } = useContext(
+    TaskContext
+  )
 
   return (
     <>
