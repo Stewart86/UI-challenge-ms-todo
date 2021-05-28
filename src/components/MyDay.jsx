@@ -4,12 +4,12 @@ export const MyDay = () => {
   return (
     <div className='flex flex-row items-center justify-between'>
       <div className='flex flex-col'>
-        <h1 className='text-4xl text-white font-semibold ml-10 mt-10'>
+        <h1 className='text-4xl text-white font-semibold ml-10'>
           My Day
         </h1>
         <h2 className='text-base text-white mx-10'>{todayDate()}</h2>
       </div>
-      <div className='flex flex-row  mr-10 mt-10 space-x-4'>
+      <div className='flex flex-row  mr-10 space-x-4'>
         <div className='bg-black rounded hover:bg-gray-900'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
