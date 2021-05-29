@@ -1,4 +1,4 @@
-import { todayDate } from "../utils/date"
+import { todayDate } from "../../utils/date"
 
 export const MyDay = () => {
   return (

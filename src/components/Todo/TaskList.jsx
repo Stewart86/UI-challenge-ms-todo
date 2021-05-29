@@ -1,6 +1,6 @@
 import { useContext, useState } from "react"
 
-import { TaskContext } from "../contexts/TaskProvider"
+import { TaskContext } from "../../contexts/TaskProvider"
 
 export const TaskList = () => {
   const [hideComplete, setHideComplete] = useState(true)
@@ -14,7 +14,7 @@ export const TaskList = () => {
         {tasks?.map((task, index) => (
           <div
             key={index}
-            className='flex flex-col mx-10 p-2 bg-gray-900 text-gray-300 hover:bg-gray-800 h-full rounded'>
+            className='flex flex-col mx-8 p-2 bg-gray-900 text-gray-300 hover:bg-gray-800 h-full rounded'>
             <div className='flex flex-row justify-between items-center'>
               <div className='flex flex-row items-center'>
                 <button
@@ -63,7 +63,7 @@ export const TaskList = () => {
         {done.length > 0 && (
           <>
             <div className='flex flex-col mt-4 space-y-1'>
-              <div className='flex flex-rol mx-10 my-2 py-0 w-auto'>
+              <div className='flex flex-rol mx-8 my-2 py-0 w-auto'>
                 <button
                   onClick={(e) => setHideComplete((state) => !state)}
                   className='flex flex-rola justify-center items-center rounded p-1 py-1  bg-black text-white outline-none focus:outline-none'>
@@ -80,7 +80,7 @@ export const TaskList = () => {
                 done?.map((task, index) => (
                   <div
                     key={index}
-                    className='flex flex-col mx-10 p-2 bg-gray-900 text-gray-300 hover:bg-gray-800 h-full rounded'>
+                    className='flex flex-col mx-8 p-2 bg-gray-900 text-gray-300 hover:bg-gray-800 h-full rounded'>
                     <div className='flex flex-row justify-between items-center'>
                       <div className='flex flex-row items-center'>
                         <button

@@ -1,74 +1,25 @@
-import { AddTask } from "../components/AddTask"
-import { MyDay } from "../components/MyDay"
-import { TaskList } from "../components/TaskList"
+import { AddTask } from "../components/Todo/AddTask"
+import { MyDay } from "../components/Todo/MyDay"
+import { TaskList } from "../components/Todo/TaskList"
+import { WindowsFrame } from "../components/WindowsFrame"
 import fern from "../images/ferns.jpg"
 
 export const Todo = () => {
   return (
-    <div
-      className='m-10 bg-black rounded sm:w-full lg:w-3/4 xl:w-2/3 2xl:w-1/3 bg-cover'
-      style={{
-        backgroundImage: `url(${fern})`,
-        boxShadow:
-          "0px 2px 40px 15px rgba(0,0,0,0.3),0px 2px 10px 4px rgba(0,0,0,0.3)",
-      }}>
-      <div className='h-8 bg-black flex flex-row justify-end'>
-        <div className='h-8 w-12 flex justify-center items-center text-white hover:bg-gray-600'>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            className='h-6 w-6'
-            fill='none'
-            viewBox='0 0 24 24'
-            stroke='currentColor'>
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth={2}
-              d='M18 12H6'
-            />
-          </svg>
-        </div>
-        <div className='h-8 w-12 flex justify-center items-center text-white hover:bg-gray-600'>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            className='h-6 w-6'
-            fill='none'
-            viewBox='0 0 24 24'
-            stroke='currentColor'>
-            <rect
-              strokeLinecap='bevel'
-              strokeLinejoin='bevel'
-              strokeWidth={2}
-              x='7'
-              y='7'
-              width='10'
-              height='10'
-            />
-          </svg>
-        </div>
-        <div className='h-8 w-12 flex justify-center items-center text-white hover:bg-red-600'>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            className='h-6 w-6'
-            fill='none'
-            viewBox='0 0 24 24'
-            stroke='currentColor'>
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth={2}
-              d='M6 18L18 6M6 6l12 12'
-            />
-          </svg>
+    <WindowsFrame>
+      <div
+        className='bg-black rounded w-full h-full bg-cover'
+        style={{
+          backgroundImage: `url(${fern})`,
+        }}>
+        <div className='flex flex-col bg-gradient-to-b from-black to-transparent bg-opacity-40 justify-between h-full'>
+          <div className='flex flex-col flex-start h-5/6 overflow-auto'>
+            <MyDay />
+            <TaskList />
+          </div>
+          <AddTask />
         </div>
       </div>
-      <div className='flex flex-col bg-gradient-to-b from-black to-transparent bg-opacity-40 justify-between h-full'>
-        <div className='flex flex-col flex-start h-5/6 overflow-auto'>
-          <MyDay />
-          <TaskList />
-        </div>
-        <AddTask />
-      </div>
-    </div>
+    </WindowsFrame>
   )
 }
