@@ -26,7 +26,7 @@ export const AddTask = () => {
   }
 
   return (
-    <div className='flex flex-row justify-center items-center bg-gray-800 rounded m-8 p-2 h-12 text-gray-500 bg-opacity-90 hover:bg-gray-900 hover:bg-opacity-70'>
+    <div className='flex flex-row justify-center items-center bg-black rounded m-8 p-2 h-12 text-gray-500 bg-opacity-70 hover:bg-gray-900 hover:bg-opacity-70 backdrop-filter backdrop-blur-md'>
       <span
         className={`w-6 h-6 mr-4 ml-2 ${
           onFocus && "border-2 rounded-full border-gray-600"

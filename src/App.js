@@ -1,17 +1,18 @@
-import { TaskProvider } from "./contexts/TaskProvider"
+import { Taskbar } from "./containers/Taskbar"
 import { Todo } from "./containers/Todo"
 import wallpaper from "./images/wallpaper.jpg"
 
 export const App = () => {
   return (
-    <TaskProvider>
+    <div className='flex flex-col h-screen min-w-full justify-center w-full'>
       <div
-        className=' container flex h-screen min-w-full justify-center bg-cover w-full'
+        className='flex h-screen min-w-full justify-center bg-cover'
         style={{
           backgroundImage: `url(${wallpaper})`,
         }}>
         <Todo />
       </div>
-    </TaskProvider>
+      <Taskbar />
+    </div>
   )
 }
